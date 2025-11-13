@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Elms_Sans } from "next/font/google";
 import "./globals.css";
+import Header from "../components/header";
 
 const elmsSans = Elms_Sans({
   variable: "--font-geist-sans",
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body
         className={`${elmsSans.variable}  antialiased`}
       >
+        <Header />
         {children}
       </body>
     </html>
