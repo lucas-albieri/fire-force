@@ -4,8 +4,9 @@ import "./globals.css";
 import Header from "../components/header";
 
 const elmsSans = Elms_Sans({
-  variable: "--font-geist-sans",
+  variable: "--font-elms-sans",
   subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 

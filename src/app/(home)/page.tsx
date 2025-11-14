@@ -1,5 +1,8 @@
+'use client'
 
-export default async function Home() {
+import Link from "next/link";
+
+export default function Home() {
 
   return (
     <main className="flex min-h-screen w-full  flex-col items-center justify-between  sm:items-center">
@@ -31,20 +34,22 @@ export default async function Home() {
           </p>
 
           <div className="pt-8">
-            <button type="button" className="group relative px-8 py-4 rounded-lg bg-linear-to-r from-orange-600 to-orange-500 text-foreground font-semibold overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-orange/50">
-              <div className="absolute inset-0 bg-linear-to-r from-orange-500 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <span className="relative flex items-center gap-2 justify-center">
-                Ver Ninjas
-                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-labelledby="exploreIconTitle">
-                  <title id="exploreIconTitle">Arrow right</title>
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </span>
-            </button>
+            <Link href="/ninjas">
+              <button type="button" className="cursor-pointer group relative px-8 py-4 rounded-lg bg-linear-to-r from-orange-600 to-orange-500 text-foreground font-semibold overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-orange/50">
+                <div className="absolute inset-0 bg-linear-to-r from-orange-500 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <span className="relative flex items-center gap-2 justify-center">
+                  Ver Ninjas
+                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-labelledby="exploreIconTitle">
+                    <title id="exploreIconTitle">Arrow right</title>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-orange-500/5 to-transparent pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-orange-500/5 to-transparent pointer-events-none" />
       </section>
     </main>
   );
