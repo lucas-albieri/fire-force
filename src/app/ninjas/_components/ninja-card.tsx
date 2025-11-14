@@ -15,7 +15,7 @@ export const NinjaCard = (ninja: NinjaCardProps) => {
             <div className="absolute inset-0 bg-linear-to-r from-orange-400/0 via-orange-400/0 to-orange-400/0 group-hover:from-orange-400/10 group-hover:via-orange-400/10 group-hover:to-orange-400/10 transition-all duration-500"></div>
 
             {/* Image Container */}
-            <div className={`relative h-80 overflow-hidden bg-linear-to-br  group-hover:scale-105 transition-transform duration-500`}>
+            <div className={`relative h-80 overflow-hidden bg-linear-to-br  group-hover:scale-105 transition-transform duration-500 cursor-pointer`}>
                 <Image
                     src={ninja.profile_image ?? "/placeholder.svg"}
                     alt={ninja.name}
