@@ -4,10 +4,10 @@ import Link from "next/link";
 
 type Props = {
     ninja: Character
-    rankColor: string
 }
 
-export function HeroSection({ ninja, rankColor }: Props) {
+export function HeroSection({ ninja }: Props) {
+
     return (
         <section className="relative pt-20 pb-12 px-4 md:px-8 lg:px-16">
             <div className="max-w-7xl mx-auto">
@@ -23,19 +23,19 @@ export function HeroSection({ ninja, rankColor }: Props) {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     {/* Image Side */}
                     <div className="relative">
-                        <div className={`relative rounded-2xl overflow-hidden h-96 md:h-full min-h-96 bg-linear-to-br from-${rankColor} to-${rankColor}/50 group`}>
+                        <div className="relative overflow-hidden h-full lg:h-160 bg-transparent group">
+
                             <Image
                                 src={ninja.images[0].image_url || "/placeholder.svg"}
                                 alt={ninja.name}
-                                className="w-full h-full object-cover opacity-90"
+                                className="relative z-10 w-full h-full object-cover object-top"
                                 fill
+                                priority
+                                quality={100}
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                                unoptimized
                             />
-                            <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent"></div>
 
-                            {/* Number Badge */}
-                            <div className="absolute top-6 right-6 w-16 h-16 rounded-full bg-linear-to-br from-orange-400 to-orange-500 flex items-center justify-center border-2 border-orange-400/30">
-                                <span className="text-2xl font-bold text-foreground">{ninja.id}</span>
-                            </div>
                         </div>
                     </div>
 

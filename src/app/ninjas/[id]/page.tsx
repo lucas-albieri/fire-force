@@ -6,6 +6,7 @@ import { HeroSection } from "./_components/hero-section"
 import { JutsuSection } from "./_components/jutsu-section"
 import { PowerSection } from "./_components/power-section"
 import { NavigationSection } from "./_components/navigation-section"
+import { ImageGallery } from "./_components/image-gallery"
 
 type Props = {
     params: Promise<{ id: string }>
@@ -41,13 +42,17 @@ export default async function NinjaPage({ params }: Props) {
             </div>
 
             {/* Hero Section */}
-            <HeroSection ninja={ninja} rankColor={rankColor} />
+            <HeroSection ninja={ninja} />
+
+            {/* Image Gallery */}
 
             {/* Jutsu Section */}
             <JutsuSection ninja={ninja} />
 
             {/* Power Stats Section */}
             <PowerSection ninja={ninja} />
+
+            <ImageGallery ninja={ninja} />
 
             {/* Navigation Section */}
             <NavigationSection ninja={ninja} />
