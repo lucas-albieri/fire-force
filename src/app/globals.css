@@ -23,3 +23,57 @@ body {
   color: var(--foreground);
   font-family: var(--font-elms-sans), system-ui, sans-serif;
 }
+
+/* Custom Scrollbar - Global */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(251, 146, 60, 0.76) rgba(251, 146, 60, 0.1);
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(251, 146, 60, 0.05);
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(251, 146, 60, 0.788);
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgb(251, 146, 60);
+}
+
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Scrollbar for specific elements */
+.scrollbar-custom {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(251, 146, 60, 0.6) rgba(251, 146, 60, 0.1);
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: rgba(251, 146, 60, 0.1);
+  border-radius: 3px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: rgba(251, 146, 60, 0.6);
+  border-radius: 3px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: rgba(251, 146, 60, 0.9);
+}

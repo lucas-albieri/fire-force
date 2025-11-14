@@ -18,7 +18,8 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**'
       }
-    ]
+    ],
+    qualities: [100, 75]
   }
 };
 

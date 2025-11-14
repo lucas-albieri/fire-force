@@ -21,9 +21,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" suppressHydrationWarning>
       <body
-        className={`${elmsSans.variable}  antialiased`}
+        className={`${elmsSans.variable} antialiased`}
+        suppressHydrationWarning
       >
         <Header />
         {children}
