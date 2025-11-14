@@ -1,3 +1,5 @@
+'use cache'
+
 import type { Character } from "@/shared/types/characters"
 import { client } from "./api"
 

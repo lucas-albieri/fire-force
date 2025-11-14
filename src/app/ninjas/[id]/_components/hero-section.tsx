@@ -13,11 +13,11 @@ export function HeroSection({ ninja, rankColor }: Props) {
             <div className="max-w-7xl mx-auto">
                 {/* Breadcrumb */}
                 <div className="flex items-center gap-2 mb-8 text-sm text-foreground/60">
-                    <Link href="/" className="hover:text-fire-gold transition">Início</Link>
+                    <Link href="/" className="hover:text-orange-400 transition">Início</Link>
                     <span>/</span>
-                    <Link href="/ninjas" className="hover:text-fire-gold transition">Ninjas</Link>
+                    <Link href="/ninjas" className="hover:text-orange-400 transition">Ninjas</Link>
                     <span>/</span>
-                    <span className="text-fire-gold">{ninja.name}</span>
+                    <span className="text-orange-400">{ninja.name}</span>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -33,7 +33,7 @@ export function HeroSection({ ninja, rankColor }: Props) {
                             <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent"></div>
 
                             {/* Number Badge */}
-                            <div className="absolute top-6 right-6 w-16 h-16 rounded-full bg-linear-to-br from-fire-orange to-fire-red flex items-center justify-center border-2 border-fire-gold/30">
+                            <div className="absolute top-6 right-6 w-16 h-16 rounded-full bg-linear-to-br from-orange-400 to-orange-500 flex items-center justify-center border-2 border-orange-400/30">
                                 <span className="text-2xl font-bold text-foreground">{ninja.id}</span>
                             </div>
                         </div>
@@ -44,8 +44,8 @@ export function HeroSection({ ninja, rankColor }: Props) {
                         {/* Header */}
                         <div className="space-y-4">
                             <div className="flex items-center gap-3">
-                                <div className="h-1 w-12 bg-linear-to-r from-fire-orange to-fire-gold"></div>
-                                <span className="text-fire-gold/80 font-light tracking-widest uppercase text-sm">{ninja.rank || 'Desconhecido'}</span>
+                                <div className="h-1 w-12 bg-linear-to-r from-orange-400 to-orange-500"></div>
+                                <span className="text-orange-400/80 font-light tracking-widest uppercase text-sm">{ninja.rank || 'Desconhecido'}</span>
                             </div>
 
                             <h1 className="text-5xl font-bold text-balance text-foreground">
@@ -58,8 +58,8 @@ export function HeroSection({ ninja, rankColor }: Props) {
                         </div>
 
                         {/* Background */}
-                        <div className="p-6 rounded-xl bg-card/40 border border-fire-gold/10 backdrop-blur-sm space-y-3">
-                            <h3 className="text-sm font-semibold text-fire-gold uppercase tracking-wider">Informações</h3>
+                        <div className="p-6 rounded-xl bg-card/10 border border-orange-400/20 backdrop-blur-sm space-y-3">
+                            <h3 className="text-sm font-semibold text-orange-400 uppercase tracking-wider">Informações</h3>
                             <div className="text-foreground/80 leading-relaxed space-y-2">
                                 {ninja.village && <p><strong>Vila:</strong> {ninja.village.name}</p>}
                                 {ninja.father && <p><strong>Pai:</strong> {ninja.father.name}</p>}
@@ -69,12 +69,12 @@ export function HeroSection({ ninja, rankColor }: Props) {
 
                         {/* Quick Stats */}
                         <div className="grid grid-cols-2 gap-4">
-                            <div className="p-4 rounded-lg bg-fire-orange/10 border border-fire-orange/20">
-                                <div className="text-2xl font-bold text-fire-orange">{ninja.jutsus?.length || 0}</div>
+                            <div className="p-4 rounded-lg bg-orange-400/10 border border-orange-400/20">
+                                <div className="text-2xl font-bold text-orange-400">{ninja.jutsus?.length || 0}</div>
                                 <div className="text-sm text-foreground/70">Jutsus</div>
                             </div>
-                            <div className="p-4 rounded-lg bg-fire-red/10 border border-fire-red/20">
-                                <div className="text-2xl font-bold text-fire-red">{ninja.images?.length || 0}</div>
+                            <div className="p-4 rounded-lg bg-orange-500/10 border border-orange-500/20">
+                                <div className="text-2xl font-bold text-orange-500">{ninja.images?.length || 0}</div>
                                 <div className="text-sm text-foreground/70">Imagens</div>
                             </div>
                         </div>

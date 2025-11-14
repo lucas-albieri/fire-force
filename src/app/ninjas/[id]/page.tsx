@@ -16,8 +16,6 @@ export default async function NinjaPage({ params }: Props) {
     const { id } = await params
     const ninja = await getNinjaById(+id)
 
-    console.log(id, ninja)
-
     if (!ninja) {
         return (
             <main className="min-h-screen bg-background">

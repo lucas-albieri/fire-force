@@ -11,12 +11,12 @@ export function JutsuSection({ ninja }: JutsuSectionProps) {
     }
 
     return (
-        <section className="py-16 px-4 md:px-8 lg:px-16 border-t border-fire-gold/10">
+        <section className="py-16 px-4 md:px-8 lg:px-16 border-t border-orange-400/10">
             <div className="max-w-7xl mx-auto">
                 <div className="space-y-6">
                     <div>
                         <div className="flex items-center gap-3 mb-6">
-                            <div className="h-1 w-12 bg-linear-to-r from-fire-red to-fire-gold"></div>
+                            <div className="h-1 w-12 bg-linear-to-r from-orange-500 to-oranborder-orange-400"></div>
                             <h2 className="text-2xl font-bold">Jutsus Especiais</h2>
                         </div>
                     </div>
@@ -25,10 +25,10 @@ export function JutsuSection({ ninja }: JutsuSectionProps) {
                         {ninja.jutsus.map((jutsu) => (
                             <div
                                 key={jutsu.id}
-                                className="p-4 rounded-lg bg-linear-to-r from-fire-red/10 to-fire-red/5 border border-fire-red/20 hover:border-fire-red/50 transition-colors"
+                                className="p-4 rounded-lg bg-linear-to-r from-orange-500/10 to-orange-500/5 border border-orange-500/20 hover:border-orange-500/50 transition-colors"
                             >
                                 <div className="flex items-center gap-3">
-                                    <div className="w-2 h-2 rounded-full bg-fire-red"></div>
+                                    <div className="w-2 h-2 rounded-full bg-orange-500"></div>
                                     <span className="font-medium text-foreground">{jutsu.name}</span>
                                 </div>
                             </div>
