@@ -5,8 +5,6 @@ export default async function Ninjas() {
 
     const ninjas = await getNinjas()
 
-    console.log(ninjas[0])
-
     return (
         <main className="flex min-h-screen w-full px-40 flex-col items-center justify-between py-32 sm:items-start">
 
@@ -23,7 +21,7 @@ export default async function Ninjas() {
                 </h1>
 
                 <p className="text-lg text-foreground/60 max-w-2xl">
-                    Conheça os shinobi mais poderosos que moldaram o destino do mundo ninja
+                    Conheça os shinobi mais poderosos que moldaram o destino do mundo ninja!
                 </p>
             </div>
 
