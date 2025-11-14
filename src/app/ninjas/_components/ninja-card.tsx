@@ -19,8 +19,8 @@ export const NinjaCard = (ninja: NinjaCardProps) => {
                     src={ninja.profile_image ?? "/placeholder.svg"}
                     alt={ninja.name}
                     className="w-full h-full object-cover object-top opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                    width={320}
-                    height={320}
+                    quality={100}
+                    fill
                 />
 
                 {/* Image Overlay */}
@@ -28,7 +28,7 @@ export const NinjaCard = (ninja: NinjaCardProps) => {
 
                 {/* Floating Badge */}
                 <div className="absolute top-3 right-3 px-3 py-1 bg-black/60 backdrop-blur-sm border border-orange-400/30 rounded-full">
-                    <span className="text-xs font-semibold text-orange-400">{ninja.id}/12</span>
+                    <span className="text-xs font-semibold text-orange-400">{ninja.id}</span>
                 </div>
             </div>
 
