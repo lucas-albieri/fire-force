@@ -1,5 +1,5 @@
 import { getNinjas } from "@/services/ninjas"
-import { NinjaCard } from "./_components/ninja-card"
+import { NinjasInfiniteScroll } from "./_components/ninjas-infinite-scroll"
 
 export default async function Ninjas() {
 
@@ -25,13 +25,7 @@ export default async function Ninjas() {
                 </p>
             </div>
 
-            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6  ">
-                {ninjas.map((ninja) => (
-                    <li key={ninja.id} className="mb-4">
-                        <NinjaCard {...ninja} />
-                    </li>
-                ))}
-            </ul>
+            <NinjasInfiniteScroll initialNinjas={ninjas} />
         </main>
     )
 }
