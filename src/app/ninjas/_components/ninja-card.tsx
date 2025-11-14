@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { Character } from "../../../shared/types/characters";
+import Link from "next/link";
 
 type NinjaCardProps = Character
 
@@ -19,7 +20,8 @@ export const NinjaCard = (ninja: NinjaCardProps) => {
                     src={ninja.profile_image ?? "/placeholder.svg"}
                     alt={ninja.name}
                     className="w-full h-full object-cover object-top opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                    quality={100}
+                    quality={75}
+                    blurDataURL={ninja.profile_image ?? "/placeholder.svg"}
                     fill
                 />
 
@@ -45,7 +47,10 @@ export const NinjaCard = (ninja: NinjaCardProps) => {
                 </p>
 
                 {/* Hover CTA */}
-                <div className="pt-2 flex items-center gap-2 text-orange-400 font-medium text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                <Link
+                    href={`/ninjas/${ninja.id}`}
+                    className="flex items-center gap-2 text-orange-400 font-medium text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 pt-2"
+                >
                     <span>Ver detalhes</span>
                     <svg
                         className="w-4 h-4"
@@ -58,7 +63,7 @@ export const NinjaCard = (ninja: NinjaCardProps) => {
                         <title id={`ninja-${ninja.id}-details-title`}>Ver detalhes</title>
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
-                </div>
+                </Link>
             </div>
 
             {/* Bottom Border Glow */}
