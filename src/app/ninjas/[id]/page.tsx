@@ -22,7 +22,7 @@ export default async function NinjaPage({ params }: Props) {
             <main className="min-h-screen bg-background">
                 <div className="pt-24 flex flex-col items-center justify-center">
                     <h1 className="text-3xl font-bold mb-4">Ninja não encontrado</h1>
-                    <Link href="/ninjas" className="text-fire-gold hover:text-fire-orange transition">
+                    <Link href="/ninjas" className="text-orange-500 hover:text-orange-400 transition">
                         Voltar para galeria
                     </Link>
                 </div>
