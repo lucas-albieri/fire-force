@@ -1,11 +1,9 @@
 import { getNinjas } from "@/services/ninjas"
-import { NinjaCard } from "./_components/ninja-card"
+import { NinjasInfiniteScroll } from "./_components/ninjas-infinite-scroll"
 
 export default async function Ninjas() {
 
     const ninjas = await getNinjas()
-
-    console.log(ninjas[0])
 
     return (
         <main className="flex min-h-screen w-full px-40 flex-col items-center justify-between py-32 sm:items-start">
@@ -23,17 +21,11 @@ export default async function Ninjas() {
                 </h1>
 
                 <p className="text-lg text-foreground/60 max-w-2xl">
-                    Conheça os shinobi mais poderosos que moldaram o destino do mundo ninja
+                    Conheça os shinobi mais poderosos que moldaram o destino do mundo ninja!
                 </p>
             </div>
 
-            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6  ">
-                {ninjas.map((ninja) => (
-                    <li key={ninja.id} className="mb-4">
-                        <NinjaCard {...ninja} />
-                    </li>
-                ))}
-            </ul>
+            <NinjasInfiniteScroll initialNinjas={ninjas} />
         </main>
     )
 }

@@ -3,6 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   reactCompiler: true,
+  cacheComponents: true,
   images: {
     remotePatterns: [
       {
@@ -17,7 +18,8 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**'
       }
-    ]
+    ],
+    qualities: [100, 75]
   }
 };
 

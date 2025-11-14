@@ -18,12 +18,12 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center space-y-8 relative z-10">
           <div className="space-y-4">
             <p className="text-orange-500/80 font-light tracking-widest uppercase text-sm">A Essência do Poder</p>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-balance leading-tight">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-balance leading-tight">
               <span className="text-transparent bg-clip-text bg-linear-to-r from-orange-600  via-orange-400 to-orange-500 animate-pulse">
                 Vontade
               </span>
               <br />
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-orange-400 via-orange-400 to-orange-500">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-orange-400 via-orange-400 to-orange-500 animate-pulse">
                 do Fogo
               </span>
             </h1>
