@@ -65,15 +65,15 @@ export default function Header() {
                     }
 
                     {/* GitHub Link */}
-                    <a
-                        href="https://github.com"
+                    <Link
+                        href="https://github.com/lucas-albieri/fire-force"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-2 rounded-lg hover:bg-orange-400/10 text-foreground/70 hover:text-orange-400 transition-all duration-200 group"
                         aria-label="GitHub"
                     >
                         <Github className="w-5 h-5 group-hover:scale-110 transition-transform duration-200" />
-                    </a>
+                    </Link>
                 </div>
             </nav>
         </header>
