@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Home Page deve corresponder ao snapshot 1`] = `
+<div>
+  <main
+    class="flex min-h-screen w-full  flex-col items-center justify-between  sm:items-center"
+  >
+    <section
+      class="relative w-full  flex flex-col items-center justify-center px-4 pt-20 overflow-hidden min-h-screen"
+    >
+      <div
+        class="absolute inset-0 -z-10"
+      >
+        <div
+          class="absolute top-0 left-1/4 w-96 h-96 bg-orange-400/5 rounded-full blur-3xl animate-pulse"
+        />
+        <div
+          class="absolute bottom-0 right-1/4 w-96 h-96 bg-red-400/5 rounded-full blur-3xl animate-pulse"
+          style="animation-delay: 1s;"
+        />
+        <div
+          class="absolute top-1/3 right-0 w-80 h-80 bg-orange-400/5 rounded-full blur-3xl animate-pulse"
+          style="animation-delay: 2s;"
+        />
+      </div>
+      <div
+        class="max-w-4xl mx-auto text-center space-y-8 relative z-10"
+      >
+        <div
+          class="space-y-4"
+        >
+          <p
+            class="text-orange-500/80 font-light tracking-widest uppercase text-sm"
+          >
+            A Essência do Poder
+          </p>
+          <h1
+            class="text-5xl md:text-7xl lg:text-8xl font-extrabold text-balance leading-tight"
+          >
+            <span
+              class="text-transparent bg-clip-text bg-linear-to-r from-orange-600  via-orange-400 to-orange-500 animate-pulse"
+            >
+              Vontade
+            </span>
+            <br />
+            <span
+              class="text-transparent bg-clip-text bg-linear-to-r from-orange-400 via-orange-400 to-orange-500 animate-pulse"
+            >
+              do Fogo
+            </span>
+          </h1>
+        </div>
+        <p
+          class="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto font-light leading-relaxed"
+        >
+          A chama que queima dentro de cada um, conectando corações através do sacrifício e da determinação
+        </p>
+        <div
+          class="pt-8"
+        >
+          <a
+            href="/ninjas"
+          >
+            <button
+              class="cursor-pointer group relative px-8 py-4 rounded-lg bg-linear-to-r from-orange-600 to-orange-500 text-foreground font-semibold overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-orange/50"
+              type="button"
+            >
+              <div
+                class="absolute inset-0 bg-linear-to-r from-orange-500 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              />
+              <span
+                class="relative flex items-center gap-2 justify-center"
+              >
+                Ver Ninjas
+                <svg
+                  aria-labelledby="exploreIconTitle"
+                  class="w-4 h-4 group-hover:translate-x-1 transition-transform"
+                  fill="none"
+                  role="img"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <title
+                    id="exploreIconTitle"
+                  >
+                    Arrow right
+                  </title>
+                  <path
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </button>
+          </a>
+        </div>
+      </div>
+      <div
+        class="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-orange-500/5 to-transparent pointer-events-none"
+      />
+    </section>
+  </main>
+</div>
+`;
