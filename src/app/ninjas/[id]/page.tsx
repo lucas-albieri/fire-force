@@ -32,13 +32,24 @@ export default async function NinjaPage({ params }: Props) {
 
     const rankColor = ninjaColorByRank(ninja.rank as NinjaRank)
 
+    // Map rankColor to Tailwind background color classes
+    const rankBgClassMap: Record<string, string> = {
+        orange: "bg-orange-500/5",
+        blue: "bg-blue-500/5",
+        green: "bg-green-500/5",
+        red: "bg-red-500/5",
+        yellow: "bg-yellow-500/5",
+        // Add other colors as needed
+    }
+    const rankBgClass = rankBgClassMap[rankColor] || "bg-gray-500/5"
+
     return (
         <main className="min-h-screen bg-background">
 
             {/* Background Effects */}
             <div className="absolute inset-0 -z-10 overflow-hidden">
-                <div className={`absolute top-0 right-1/3 w-96 h-96 bg-${rankColor}/5 rounded-full blur-3xl`}></div>
-                <div className={`absolute bottom-20 left-1/4 w-80 h-80 bg-${rankColor}/5 rounded-full blur-3xl`}></div>
+                <div className={`absolute top-0 right-1/3 w-96 h-96 ${rankBgClass} rounded-full blur-3xl`}></div>
+                <div className={`absolute bottom-20 left-1/4 w-80 h-80 ${rankBgClass} rounded-full blur-3xl`}></div>
             </div>
 
             {/* Hero Section */}

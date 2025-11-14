@@ -21,7 +21,7 @@ export function NinjasInfiniteScroll({ initialNinjas }: NinjasInfiniteScrollProp
         ninja.name.toLowerCase().includes(searchTerm.toLowerCase())
     )
 
-    // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
+    // biome-ignore lint/correctness/useExhaustiveDependencies: Only want to reset displayedCount when searchTerm changes, not on other state changes.
     useEffect(() => {
         // Reset displayedCount quando o filtro mudar
         setDisplayedCount(ITEMS_PER_PAGE)

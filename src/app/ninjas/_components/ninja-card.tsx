@@ -50,6 +50,7 @@ export const NinjaCard = (ninja: NinjaCardProps) => {
                 <Link
                     href={`/ninjas/${ninja.id}`}
                     className="flex items-center gap-2 text-orange-400 font-medium text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 pt-2"
+                    aria-label={`Ver detalhes de ${ninja.name}`}
                 >
                     <span>Ver detalhes</span>
                     <svg

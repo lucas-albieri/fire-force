@@ -16,7 +16,7 @@ export function JutsuSection({ ninja }: JutsuSectionProps) {
                 <div className="space-y-6">
                     <div>
                         <div className="flex items-center gap-3 mb-6">
-                            <div className="h-1 w-12 bg-linear-to-r from-orange-500 to-oranborder-orange-400"></div>
+                            <div className="h-1 w-12 bg-linear-to-r from-orange-500 to-orange-400"></div>
                             <h2 className="text-2xl font-bold">Jutsus Especiais</h2>
                         </div>
                     </div>

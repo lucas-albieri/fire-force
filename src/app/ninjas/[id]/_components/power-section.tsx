@@ -24,7 +24,7 @@ export function PowerSection({ ninja }: JutsuSectionProps) {
                     <div className="w-full bg-card rounded-full h-3 overflow-hidden border border-orange-400/10">
                         <div
                             className="h-full bg-linear-to-r from-orange-400 to-orange-500 transition-all duration-500"
-                            style={{ width: `${Math.min((ninja?.power / 100) * 100, 100)}%` }}
+                            style={{ width: `${Math.min(ninja?.power ?? 0, 100)}%` }}
                         ></div>
                     </div>
                 </div>

@@ -7,5 +7,5 @@ export default function Loading() {
         </div>
         <span className="text-orange-600 animate-pulse text-xl">Carregando ninjas...</span>
 
-    </div>;
+    </div>
 }

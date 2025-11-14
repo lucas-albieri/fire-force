@@ -14,7 +14,7 @@ export interface Character {
         name: string;
     }
     rank?: string;
-    power: number;
+    power?: number;
     profile_image?: string;
     summary?: string;
     jutsus?: {

@@ -8,7 +8,7 @@ export async function getNinjaById(id: number) {
         const response = await client.get(`characters/${id}`)
         return response.json<Character>()
     } catch (error) {
-        console.error("Failed to fetch ninja:", error)
+        console.error(`Failed to fetch ninja with id ${id}:`, error)
         return null
     }
 }
